@@ -5,4 +5,6 @@ services:
 
 script:
   - docker-compose build
-  - docker-compose start
+  - docker-compose up -d
+  - docker-compose stop
+  - docker-compose rm -f
